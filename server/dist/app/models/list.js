@@ -1,5 +1,5 @@
 // server/app/models/list.ts
-var db = require('../../config/db');
+const db = require('../../config/db');
 function list() {
     //get list of matches, filtered by user if specified.
     this.get = function (res) {

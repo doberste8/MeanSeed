@@ -1,9 +1,9 @@
 // server/config/db.ts
-var mysql = require('mysql');
-var dbHost = process.env.DB_HOST;
-var dbUser = process.env.DB_USER;
-var dbPassword = process.env.DB_PASSWORD;
-var dbDatabase = process.env.DB_DATABASE;
+const mysql = require('mysql');
+const dbHost = process.env.DB_HOST;
+const dbUser = process.env.DB_USER;
+const dbPassword = process.env.DB_PASSWORD;
+const dbDatabase = process.env.DB_DATABASE;
 function Connection() {
     this.pool = null;
     this.init = function () {

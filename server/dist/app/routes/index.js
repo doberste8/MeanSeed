@@ -1,11 +1,11 @@
 // server/app/routes/index.ts
-var path = require('path');
-var router = require('express').Router();
+const path = require('path');
+const router = require('express').Router();
 router.use(function (req, res, next) {
     next();
 });
 // server routes ============================================================
-var api = require('./api');
+const api = require('./api');
 router.use('/api', api);
 // frontend routes ==========================================================
 // route to handle all angular requests
