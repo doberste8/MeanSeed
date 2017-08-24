@@ -7,6 +7,10 @@
     "start": "concurrently \"gulp\" \"gulp watch\" \"nodemon server/server.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doberste8/MeanSeed.git"
+  },
   "keywords": [],
   "author": "stephan dober",
   "license": "MIT",
