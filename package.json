@@ -4,7 +4,7 @@
   "description": "Starting Point For Mean Stack Application",
   "main": "server/server.js",
   "scripts": {
-    "start": "concurrently \"gulp\" \"gulp watch\" \"nodemon server/server.js\"",
+    "start": "gulp && concurrently \"gulp watch\" \"gulp browser-sync\" \"nodemon --exec node -r dotenv/config server/server.js dotenv_config_path=server/.env\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

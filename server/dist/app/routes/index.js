@@ -5,7 +5,7 @@ router.use(function (req, res, next) {
     next();
 });
 // server routes ============================================================
-const api = require('./api');
+var api = require('./api');
 router.use('/api', api);
 // frontend routes ==========================================================
 // route to handle all angular requests

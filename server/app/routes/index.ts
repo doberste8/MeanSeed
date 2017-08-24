@@ -8,7 +8,7 @@ router.use(function(req, res, next) {
 });
 
 // server routes ============================================================
-const api = require('./api');
+var api = require('./api');
 router.use('/api', api);
 
 // frontend routes ==========================================================

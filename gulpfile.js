@@ -10,7 +10,7 @@ let clientTsProject = ts.createProject('client/tsconfig.json');
 let serverTsProject = ts.createProject('server/tsconfig.json');
 
 // These tasks will be run when you just type "gulp"
-gulp.task('default', [ 'clientscripts', 'serverscripts', 'browser-sync' ]);
+gulp.task('default', [ 'clientscripts', 'serverscripts' ]);
 
 // This task can be run alone with "gulp clientscripts"
 gulp.task('clientscripts', () => {
@@ -43,5 +43,4 @@ gulp.task('browser-sync', function() {
 gulp.task('watch', () => {
   gulp.watch('client/**/*.ts', [ 'clientscripts' ]);
   gulp.watch('server/**/*.ts', [ 'serverscripts' ]);
-  // gulp.watch('./**/*').on('change', bs);
 });

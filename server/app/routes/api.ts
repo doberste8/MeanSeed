@@ -1,6 +1,6 @@
 // server/app/routes/api.ts
 
-const api = require('express').Router();
+var api = require('express').Router();
 // var list = require('../models/list');
 
 // middleware for all api requests

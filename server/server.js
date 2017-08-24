@@ -33,7 +33,7 @@ app.use('/', router);
 
 // start app ==================================================================
 app.listen(port);
-console.log("App listening on port " + port);
+console.log("App listening on port " + port + " in " + process.env.NODE_ENV + " mode...");
 
 // expose app
 exports = module.exports = app;
