@@ -1,2 +1,2 @@
-# GroupMeCountBot
-group me bot to post message count
+# MeanSeed
+Starting Point For Mean Stack Application
